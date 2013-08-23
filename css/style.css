@@ -1,0 +1,63 @@
+body { 
+	margin: 0px; 
+	padding: 0px; 
+}
+.sliderplugin #next {
+	float: left;
+    left: 70%;
+    position: absolute;
+    top: 205px;
+}
+.sliderplugin #previous {
+ 	left: 12%;
+    position: relative;
+    top: 143px;
+ }
+ .sliderplugin #next.disabled img, .sliderplugin #previous.disabled img {
+	opacity: 0.5;
+}
+.sliderplugin .mainContent { 
+	width: 500px; 
+	height: 100px; 
+	margin: auto; 
+	overflow: hidden;
+	position: relative;
+	margin-top:50px; 
+}
+.sliderplugin .slider {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	left: 0;	
+}
+.sliderplugin .slidercontent {
+	width: 500px;
+	height: 436px;
+}
+.sliderplugin .slidercontent img {
+	margin: 4px;
+	margin-top: 10px;
+}
+.sliderplugin .slidercontent img:hover {
+	cursor: pointer;
+}
+.sliderplugin .firstScene {
+	background: red; 
+	float: left; 
+}
+.sliderplugin .secondScene {
+	background: blue;
+	float: left;
+}
+.sliderplugin .thirdScene {
+	background: green; 
+	float: left;
+}
+.sliderplugin .pageNumbers,.sliderplugin .currentPage,.sliderplugin #change{
+	font-weight: bold;
+    left: 42%;
+    position: relative;
+}
+.someHiddenClass {
+	display: none;
+}

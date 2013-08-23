@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<LINK href="css/style.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/slider.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var changeFlag = true;
+				SliderPlugin.setcontent(6);
+				SliderPlugin.setup();
+				//On click of open gallery and close gallery button
+				$("#change").click(function() {
+					//If animation is not happening currently then change the carousal
+					if(!SliderPlugin.AnimatingFlag) {
+						if(changeFlag) {
+							$(".mainContent").animate({
+								height: "432px"
+							}, 300);
+							SliderPlugin.setcontent(25);
+							SliderPlugin.setup();
+							changeFlag = false;
+						} else {
+							$(".mainContent").animate({
+								height: "100px"
+							}, 300);
+							SliderPlugin.setcontent(6);
+							SliderPlugin.setup();
+							changeFlag = true;
+						}
+					}
+				});
+			});
+			someFunction = function(current) {
+				alert("you have clicked me");
+				console.log($(current).index());
+			}
+		</script>
+	</head>
+	<body>
+		<div class="sliderplugin">
+			<div class="pageNumbers"></div>
+			<div class="currentPage"></div>
+			<button id="change">Change the carousal</button>
+			<a id="previous"><img src="./images/left.jpg" height="75" width="75"></a>
+			<div class="mainContent">
+				<div class="slider">
+				</div>
+			</div>
+			<a id="next"><img src="./images/right.jpg" height="75" width="75"></a>
+		</div>
+		<div class="someHiddenClass">
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+			<a onclick = "someFunction(this);"><img src="http://static.flickr.com/66/199481236_dc98b5abb3_s.jpg" width="75" height="75" /></a>
+		</div>
+	</body>
+</html>
